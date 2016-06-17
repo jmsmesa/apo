@@ -19,7 +19,6 @@
             set f2::Fecha  to e::Appointment::Start 
             set e::Cancel to true
             invoke F2::add_Closed(new EventHandler(self::Window_Closed2))
-            
             invoke f2::Show 
             
        end method.
