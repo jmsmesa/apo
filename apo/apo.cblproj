@@ -39,6 +39,26 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls">
+      <Name>Telerik.WinControls</Name>
+      <HintPath>file://Telerik.WinControls</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView">
+      <Name>Telerik.WinControls.GridView</Name>
+      <HintPath>file://Telerik.WinControls.GridView</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Scheduler">
+      <Name>Telerik.WinControls.Scheduler</Name>
+      <HintPath>C:\Program Files (x86)\Telerik\UI for WinForms Q2 2016\Bin40\Telerik.WinControls.Scheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI">
+      <Name>Telerik.WinControls.UI</Name>
+      <HintPath>file://Telerik.WinControls.UI</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon">
+      <Name>TelerikCommon</Name>
+      <HintPath>file://TelerikCommon</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="System" />
@@ -54,7 +74,24 @@
     <Compile Include="Form1.Designer.cbl">
       <DependentUpon>Form1.cbl</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cbl">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cbl">
+      <DependentUpon>Form2.cbl</DependentUpon>
+    </Compile>
     <Compile Include="Main.cbl" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cbl</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cbl</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\licenses.licx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Micro Focus\Visual COBOL\v1.0\MicroFocus.COBOL.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
